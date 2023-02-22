@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
-import auth
-import user
-import todo
+from application.controllers import auth
+from application.controllers import user
+from application.controllers import todo
 
 all_bp = [
     auth.auth_bp,

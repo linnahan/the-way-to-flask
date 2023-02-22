@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
-from user import *
-from todo import *
+from .user import *
+from .todo import *
 
 
 def all():

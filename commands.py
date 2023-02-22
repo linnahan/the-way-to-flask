@@ -39,8 +39,7 @@ class GEventServer(Command):
 
     def __call__(self, app, **kwargs):
         gevent.monkey.patch_all()
-
         ws = gevent.wsgi.WSGIServer(listener=(self.host, self.port),
                                     application=app)
-        print "* Running on http://{}:{}/ (Press CTRL+C to quit)".format(self.host, self.port)
+        print("* Running on http://{}:{}/ (Press CTRL+C to quit)".format(self.host, self.port))
         ws.serve_forever()

@@ -15,11 +15,11 @@ from application.models import User, Role
 from application.controllers import all_bp
 
 # convert python's encoding to utf8
-try:
-    reload(sys)
-    sys.setdefaultencoding('utf8')
-except (AttributeError, NameError):
-    pass
+# try:
+#     reload(sys)
+#     sys.setdefaultencoding('utf8')
+# except (AttributeError, NameError):
+#     pass
 
 
 def create_app(mode):

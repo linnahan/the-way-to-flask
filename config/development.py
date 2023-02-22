@@ -16,11 +16,11 @@ class DevelopmentConfig(Config):
 
     # Site domain
     SITE_TITLE = "twtf"
-    SITE_DOMAIN = "http://localhost:8080"
+    SITE_DOMAIN = "http://0.0.0.0:8000"
 
     # MongoEngine config
     MONGODB_SETTINGS = {
         'db': 'the_way_to_flask',
-        'host': '192.168.59.103',
+        'host': '192.168.0.222',
         'port': 27017
     }

@@ -12,7 +12,7 @@ class ProductionConfig(Config):
     SITE_DOMAIN = "http://www.twtf.com"
 
     # Db config
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:password@localhost/twtf"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:123456@192.168.0.222/twtf"
 
     # Sentry
     SENTRY_DSN = ''

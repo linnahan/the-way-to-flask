@@ -13,10 +13,12 @@ auth_bp = Blueprint('auth', __name__, url_prefix='/auth')
 
 @auth_bp.route('/login', methods=['POST'])
 def login():
-    print "rdata: {}".format(request.data)
+    print("rdata: {}".format(request.data))
     info = json.loads(request.data)
-    username = info.get('username', 'guest')
-    password = info.get('password', '')
+    # username = info.get('username', 'guest')
+    # password = info.get('password', '')
+    username = info.get('username')
+    password = info.get('password')
 
     user = Models.User.objects(name=username,
                                password=password).first()
